@@ -25,8 +25,9 @@ def get_instances_from_input_data(df, convection_coefficient_calculated, pr=0):
 def print_surfase_temperature(batary_sections):
     for sec_name, sec_obj in batary_sections.items():
         print(f'Секция-{sec_name}:')
-        print(f'    температурный напор (Т0—Тст)={sec_obj.temperature_head:.1f} °С, ')
-        print(f'    коэффицинт теплоотдачи a={sec_obj.convection_coefficient:.2f} Вт/(м²·°С), ')
+        print(f'    - мощность рассеяния:     Pdis={sec_obj.power_dissipation:.1f} °С, ')
+        print(f'    - температурный напор:    (Т0—Тст)={sec_obj.temperature_head:.1f} °С, ')
+        print(f'    - коэффицинт теплоотдачи: a={sec_obj.convection_coefficient:.2f} Вт/(м²·°С), ')
 
 
 class BatarySetion:

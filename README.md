@@ -1,7 +1,7 @@
 # temperature-calculation-of-battery-section
 ## super-simple analytical model of convective heat transfer for calculating the temperature on the surface of a cylindrical body
 
-The convective heat transfer coefficient is calculated by the formula:
+Using the experimental data, we calculate the coefficient of convective heat transfer by the formula:
 
 q_{cт} = a*(Т_0—Т_{ст}), (1)
 
